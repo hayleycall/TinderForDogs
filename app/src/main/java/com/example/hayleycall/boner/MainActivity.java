@@ -1,5 +1,6 @@
 package com.example.hayleycall.boner;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -58,5 +60,15 @@ public class MainActivity extends ActionBarActivity {
         intent.putExtra("item", text);
         startActivity(intent);
 
+    }
+
+    public class TestImages extends Activity {
+        /** Called when the activity is first created. */
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            ImageView image = (ImageView) findViewById(R.id.pupbone_image);
+        }
     }
 }
