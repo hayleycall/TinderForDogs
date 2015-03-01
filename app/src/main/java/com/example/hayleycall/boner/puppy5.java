@@ -60,4 +60,8 @@ public class puppy5 extends ActionBarActivity {
         }
 
     }
+    public void goToNextDog(View view){
+        Intent intent = new Intent(this,puppy6.class);
+        startActivity(intent);
+    }
 }

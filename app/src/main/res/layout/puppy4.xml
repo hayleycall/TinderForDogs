@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="My name is Chunksterau!"
+        android:text="My name is Chunkster!"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:id="@+id/textView2" />
@@ -23,11 +23,11 @@
         android:id="@+id/textView1" />
 
     <ImageView
-        android:id="@+id/imageDog1"
+        android:id="@+id/imageDog4"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center"
-        android:src="@drawable/dog1"
+        android:src="@mipmap/dog4"
 
         />
 
@@ -46,8 +46,8 @@
             />
         <ImageButton
             android:id="@+id/buttonNo"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_width="115dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:src="@drawable/redbones"

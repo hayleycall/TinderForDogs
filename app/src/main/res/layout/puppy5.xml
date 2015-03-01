@@ -23,11 +23,11 @@
         android:id="@+id/textView1" />
 
     <ImageView
-        android:id="@+id/imageDog1"
+        android:id="@+id/imageDog5"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center"
-        android:src="@drawable/dog1"
+        android:src="@mipmap/dog5"
 
         />
 
@@ -46,8 +46,8 @@
             />
         <ImageButton
             android:id="@+id/buttonNo"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_width="115dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:src="@drawable/redbones"

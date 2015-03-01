@@ -29,6 +29,18 @@
             android:label="puppy3" >
         </activity>
         <activity
+            android:name=".puppy4"
+            android:label="puppy4" >
+        </activity>
+        <activity
+            android:name=".puppy5"
+            android:label="puppy5" >
+        </activity>
+        <activity
+            android:name=".puppy6"
+            android:label="puppy6" >
+        </activity>
+        <activity
             android:name=".MyAndroidAppActivity"
             android:label="MyAndroidAppActivity" >
         </activity>

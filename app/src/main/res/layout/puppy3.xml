@@ -45,11 +45,12 @@
             />
         <ImageButton
             android:id="@+id/buttonNo"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_width="115dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:src="@drawable/redbones"
+            android:onClick="goToNextDog"
             />
 
     </RelativeLayout>

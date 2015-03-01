@@ -44,7 +44,7 @@ public class Puppy3Match extends ActionBarActivity {
     }
 
     public void keepSearching(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, puppy4.class);
         startActivity(intent);
     }
 
