@@ -24,6 +24,14 @@
             android:name=".MainActivity3Activity"
             android:label="@string/title_activity_main_activity3" >
         </activity>
+        <activity
+            android:name=".MyAndroidAppActivity"
+            android:label="MyAndroidAppActivity" >
+        </activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/title_activity_third" >
+        </activity>
     </application>
 
 </manifest>

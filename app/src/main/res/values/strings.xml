@@ -6,5 +6,26 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_main_activity3">MainActivity3Activity</string>
+    <string name="title_activity_second">SecondActivity</string>
 
+    <string name="feedbacktitle">Boner</string>
+    <string name="feedbackname">Your name</string>
+    <string name="feedbackemail">Your email</string>
+    <string name="gender">Gender</string>
+    <string-array name="gender_array">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+    <string name='activitylevel'>Activity Level</string>
+    <string-array name="activity_level">
+        <item>Minimal</item>
+        <item>Average</item>
+        <item>High</item>
+    </string-array>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string-array name="yesno">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
 </resources>

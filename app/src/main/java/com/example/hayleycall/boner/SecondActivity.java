@@ -1,26 +1,32 @@
 package com.example.hayleycall.boner;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+/**
+ * Created by HayleyCall on 2/28/15.
+ */
+
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
 
-
-public class puppy1 extends ActionBarActivity {
+public class SecondActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.puppy1);
+        setContentView(R.layout.activity_second2);
+
+        TextView textView = (TextView) findViewById(R.id.secondTextView);
+        String item = getIntent().getStringExtra("item");
+        textView.setText(item);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_second, menu);
         return true;
     }
 
@@ -39,3 +45,5 @@ public class puppy1 extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+
