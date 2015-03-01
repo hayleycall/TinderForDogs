@@ -11,20 +11,24 @@
         android:id="@+id/TextViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/feedbacktitle"
-        android:textSize="10pt">
+        android:text="\nSign Up"
+        android:textSize="15pt">
+
      </TextView>
      <TextView
-         android:text="Full Name"
+         android:text="\n\n\tFull Name"
+         android:textSize="10pt"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content" />
+
      <EditText
         android:width="600px"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content">
       </EditText>
       <TextView
-          android:text="Email"
+          android:text="\n\n\tEmail"
+          android:textSize="10pt"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content" />
       <EditText
@@ -33,7 +37,8 @@
           android:layout_height="wrap_content">
        </EditText>
        <TextView
-           android:text="Address"
+           android:text="\n\n\tAddress"
+           android:textSize="10pt"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"/>
        <EditText
@@ -41,24 +46,22 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content">
         </EditText>
+        <TextView
+            android:text="\n\n\tGender"
+            android:textSize="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
         <Spinner
             android:id="@+id/gender_spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/gender_array"
-            android:prompt="@string/gender">
+            android:entries="@array/gender_array">
          </Spinner>
-        <Spinner
-            android:id="@+id/activity_spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/activity_level"
-            android:prompt="@string/activitylevel">
-        </Spinner>
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/abc_action_bar_subtitle_bottom_margin_material"
             android:text="Submit"/>
      </LinearLayout>
  </ScrollView>
