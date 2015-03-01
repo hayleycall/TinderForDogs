@@ -6,12 +6,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class FourthActivity extends ActionBarActivity {
+public class Puppy3Match extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_fourth);
+        setContentView(R.layout.activity_fourth);
     }
 
 

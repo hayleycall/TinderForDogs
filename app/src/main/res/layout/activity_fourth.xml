@@ -11,5 +11,36 @@
         android:src="@drawable/dog3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Continue Searching"
+        android:onClick="keepSearching"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="\n\n\n\n\n\nCongratulations!\n You matched with Berlin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="\n\n\n\n\n\n\n\n\nAddress: 1156 W Cesar Chavez St, Austin, TX 78703"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="\n\n\n\n\n\n\n\n\n\n\n\nPhone Number: (512) 961-6519"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="http://www.austinpetsalive.org/adopt/available-dog-details/?ID=24810593#"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

@@ -25,7 +25,7 @@ public class ThirdActivity extends ActionBarActivity {
     private void loadSavedPreferences() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
-        editor.putBoolean("pets", true);
+        editor.putBoolean("pets",(boolean) pets);
         editor.putBoolean("backyard", true);
         editor.putBoolean("kids", false);
         editor.commit();
