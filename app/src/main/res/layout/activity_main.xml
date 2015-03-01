@@ -13,29 +13,24 @@
     <ImageView
         android:id="@+id/pupbone_image"
         android:src="@drawable/ic_launcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         />
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="Button1"
-        android:onClick="clickMe"
-        android:layout_below="@id/textView"/>
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_marginBottom="150px"
+        android:onClick="clickMe"/>
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:text="Start Second Activity"
-        android:onClick="goToSecondActivity"
-        android:layout_below="@id/button1"/>
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_marginBottom="1px"
+        android:onClick="goToSecondActivity"/>
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/button2"/>
 </RelativeLayout>

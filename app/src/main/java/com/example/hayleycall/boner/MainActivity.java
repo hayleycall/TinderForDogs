@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -55,9 +54,6 @@ public class MainActivity extends ActionBarActivity {
 
     public void goToSecondActivity (View view) {
         Intent intent = new Intent(this, SecondActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText1);
-        String text = editText.getText().toString();
-        intent.putExtra("item", text);
         startActivity(intent);
 
     }
