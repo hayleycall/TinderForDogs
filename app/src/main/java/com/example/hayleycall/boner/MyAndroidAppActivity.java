@@ -16,7 +16,7 @@ import android.widget.Button;
  */
 public class MyAndroidAppActivity extends Activity {
 
-    private Spinner gender_spinner,activity_spinner;
+    private Spinner gender_spinner;
     private Button btnSubmit;
 
     @Override
@@ -25,7 +25,6 @@ public class MyAndroidAppActivity extends Activity {
         setContentView(R.layout.form);
 
         addItemsOnGenderSpinner();
-        addItemsOnActivitySpinner();
         addListenerOnButton();
 
 
@@ -56,21 +55,18 @@ public class MyAndroidAppActivity extends Activity {
         gender_spinner=(Spinner)findViewById(R.id.gender_spinner);
     }
 
-    public void addItemsOnActivitySpinner(){
-        activity_spinner=(Spinner)findViewById(R.id.activity_spinner);
-    }
+
 
     public void addListenerOnButton() {
         gender_spinner = (Spinner) findViewById(R.id.gender_spinner);
-        activity_spinner = (Spinner) findViewById(R.id.activity_spinner);
+
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MyAndroidAppActivity.this,
                         "OnClick Listener: " +
-                        "\nGender: " + String.valueOf(gender_spinner.getSelectedItem()) +
-                        "\nActivity Level: " + String.valueOf(activity_spinner.getSelectedItem()),
+                        "\nGender: " + String.valueOf(gender_spinner.getSelectedItem()),
                         Toast.LENGTH_SHORT).show();
             }
         });

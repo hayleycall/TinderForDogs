@@ -11,18 +11,18 @@
         android:id="@+id/TextViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\nSign Up"
+        android:text="Sign Up"
         android:textSize="15pt">
 
      </TextView>
      <TextView
-         android:text="\n\n\tFull Name"
+         android:text="\n\tFull Name"
          android:textSize="10pt"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content" />
 
      <EditText
-        android:width="600px"
+        android:width="800px"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content">
       </EditText>
@@ -32,7 +32,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content" />
       <EditText
-          android:width="600px"
+          android:width="800px"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content">
        </EditText>
@@ -42,7 +42,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"/>
        <EditText
-           android:width="600px"
+           android:width="800px"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content">
         </EditText>
