@@ -7,8 +7,8 @@
     tools:context="com.example.hayleycall.boner.FourthActivity">
 
     <ImageView
-        android:id="@+id/berlin_match"
-        android:src="@drawable/dog3"
+        android:id="@+id/morgan_match"
+        android:src="@drawable/dog1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
@@ -17,18 +17,18 @@
         android:layout_alignParentRight="true"
         android:text="Continue Searching"
         android:onClick="keepSearching"
-      />
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10pt"
-        android:text="\n\n\n\n\n\nCongratulations!\n You matched with Berlin"/>
+        android:text="\n\n\n\n\n\nCongratulations!\n You matched with Morgan"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10pt"
         android:text="\n\n\n\n\n\n\n\n\nAddress: 1156 W Cesar Chavez St, Austin, TX 78703"
-    />
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10pt"
-        android:text="http://www.austinpetsalive.org/adopt/available-dog-details/?ID=24810593#"
+        android:text="http://www.austinpetsalive.org/adopt/available-dog-details/?ID=16167159"
         android:autoLink="web"
         android:linksClickable="true"
         android:layout_alignParentBottom="true"/>
