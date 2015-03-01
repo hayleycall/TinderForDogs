@@ -31,16 +31,16 @@
             android:layout_width="105dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/pawbutton"
+            android:src="@drawable/pawButton"
             android:onClick="goToNextDog"
             />
         <ImageButton
             android:id="@+id/buttonNo"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_width="115dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/redbone"
+            android:src="@drawable/redbones"
             android:onClick="goToNextDog"
             />
 

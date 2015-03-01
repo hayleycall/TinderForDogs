@@ -30,4 +30,6 @@
     </string-array>
     <string name="title_activity_fourth">FourthActivity</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_congratulations_match">congratulations_match</string>
+    <string name="title_activity_custombar">custombar</string>
 </resources>
