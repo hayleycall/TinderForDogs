@@ -8,10 +8,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Spinner;
 import android.content.SharedPreferences;
+import android.widget.AdapterView;
 public class ThirdActivity extends ActionBarActivity {
     private Spinner pets,backyard,kids;
+    public boolean otherPets,hasBackyard,hasKids;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +25,19 @@ public class ThirdActivity extends ActionBarActivity {
         kids = (Spinner)findViewById(R.id.kids_spinner);
         loadSavedPreferences();
     }
+    public boolean onItemSelected(Spinner spinner){
+            if (spinner.getSelectedItem().toString().equals("Yes"))return true;
+            return false;
+    }
     private void loadSavedPreferences() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
-        editor.putBoolean("pets",(boolean) pets);
-        editor.putBoolean("backyard", true);
-        editor.putBoolean("kids", false);
+        otherPets= onItemSelected(pets);
+        hasBackyard= onItemSelected(backyard);
+        hasKids= onItemSelected(kids);
+        editor.putBoolean("pets",otherPets);
+        editor.putBoolean("backyard", hasBackyard);
+        editor.putBoolean("kids", hasKids);
         editor.commit();
     }
     @Override
