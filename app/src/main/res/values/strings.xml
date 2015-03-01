@@ -21,4 +21,9 @@
         <item>Average</item>
         <item>High</item>
     </string-array>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string-array name="yesno">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
 </resources>

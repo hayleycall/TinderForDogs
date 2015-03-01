@@ -52,11 +52,12 @@ public class MainActivity extends ActionBarActivity {
         textView.setTextColor(Color.parseColor("#dfdfdf"));
     }
 
-    public void goToMyAndroidAppActivity (View view) {
-        Intent intent = new Intent(this, MyAndroidAppActivity.class);
+    public void goToThirdActivity(View view) {
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
 
     }
+
 
     public class TestImages extends Activity {
         /** Called when the activity is first created. */
