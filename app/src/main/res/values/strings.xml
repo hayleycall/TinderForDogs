@@ -28,4 +28,6 @@
         <item>Yes</item>
         <item>No</item>
     </string-array>
+    <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

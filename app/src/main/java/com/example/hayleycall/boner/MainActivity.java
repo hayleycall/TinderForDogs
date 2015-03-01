@@ -8,12 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class puppy1 extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.puppy1);
+        setContentView(R.layout.activity_main);
     }
 
 
@@ -22,11 +22,6 @@ public class puppy1 extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-    }
-
-    public void goToNextDog(View view){
-        Intent intent = new Intent(this,puppy2.class);
-        startActivity(intent);
     }
 
     @Override
@@ -42,5 +37,15 @@ public class puppy1 extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goToPuppy1 (View view) {
+        Intent intent = new Intent(this, puppy1.class);
+        startActivity(intent);
+    }
+
+    public void goToThirdActivity (View view) {
+        Intent intent = new Intent(this, ThirdActivity.class);
+        startActivity(intent);
     }
 }

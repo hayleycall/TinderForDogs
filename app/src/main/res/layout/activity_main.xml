@@ -7,8 +7,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="Boner: Tinder for Dogs!"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
         android:id="@+id/pupbone_image"
@@ -16,14 +19,29 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         />
+
     <Button
-        android:text="Find your best mate!"
+        android:text="Who do you want?"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="40sp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/holo_blue_light"
+        android:onClick="goToThirdActivity"/>
+    <Button
+        android:text="Find your best friend!"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="goToThirdActivity"/>
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/holo_red_light"
+        android:onClick="goToPuppy1"/>
+
 
 
 </RelativeLayout>

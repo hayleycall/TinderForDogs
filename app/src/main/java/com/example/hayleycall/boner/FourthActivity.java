@@ -1,32 +1,25 @@
 package com.example.hayleycall.boner;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class puppy1 extends ActionBarActivity {
+public class FourthActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.puppy1);
+//        setContentView(R.layout.activity_fourth);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        getMenuInflater().inflate(R.menu.menu_fourth, menu);
         return true;
-    }
-
-    public void goToNextDog(View view){
-        Intent intent = new Intent(this,puppy2.class);
-        startActivity(intent);
     }
 
     @Override
