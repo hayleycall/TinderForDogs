@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/chunkster_match"
-        android:src="@mipmap/dog4"
+        android:src="@drawable/chunkster"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
