@@ -1,32 +1,32 @@
 package com.example.hayleycall.boner;
 
-import android.content.Intent;
-import android.graphics.Color;
+/**
+ * Created by HayleyCall on 2/28/15.
+ */
+
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
-
-public class MainActivity extends ActionBarActivity {
+public class SecondActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second2);
 
         TextView textView = (TextView) findViewById(R.id.secondTextView);
-
+        String item = getIntent().getStringExtra("item");
+        textView.setText(item);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_second, menu);
         return true;
     }
 
@@ -44,19 +44,6 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void clickMe(View view) {
-        TextView textView = (TextView) findViewById(R.id.textView);
-
-        textView.setTextColor(Color.parseColor("#dfdfdf"));
-    }
-
-    public void goToSecondActivity (View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText1);
-        String text = editText.getText().toString();
-        intent.putExtra("item", text);
-        startActivity(intent);
-
-    }
 }
+
+
