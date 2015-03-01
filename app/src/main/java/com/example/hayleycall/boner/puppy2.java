@@ -1,6 +1,7 @@
 package com.example.hayleycall.boner;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,9 @@ import android.view.View;
 
 
 public class puppy2 extends ActionBarActivity {
+    public boolean otherPets=true;
+    public boolean hasBackyard=false;
+    public boolean hasKids=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +42,21 @@ public class puppy2 extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
     public void goToNextDog(View view){
         Intent intent = new Intent(this,puppy3.class);
         startActivity(intent);
     }
 
+    public void match(View view){
+        if(MyProperties.getInstance().otherPets==true && MyProperties.getInstance().hasBackyard==false
+                && MyProperties.getInstance().hasKids==true){
+            Intent intent = new Intent(this,FifthActivity.class);
+            startActivity(intent);
+        }else{
+            Intent intent = new Intent(this,puppy3.class);
+            startActivity(intent);
+        }
+
+    }
 }

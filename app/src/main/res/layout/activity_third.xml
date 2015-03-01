@@ -16,34 +16,73 @@
         android:textSize="10pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <Spinner
-        android:id="@+id/otherpet_spinner"
+ <RadioGroup
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/otherpet_yes"
         android:layout_width="fill_parent"
-        android:entries="@array/yesno"
+        android:text="Yes"
+        android:onClick="onRadioButtonClicked"
         android:layout_height="wrap_content">
-     </Spinner>
+     </RadioButton>
+     <RadioButton
+         android:id="@+id/otherpet_no"
+         android:layout_width="fill_parent"
+         android:text="No"
+         android:onClick="onRadioButtonClicked"
+         android:layout_height="wrap_content">
+     </RadioButton>
+ </RadioGroup>
+ <RadioGroup
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
         <TextView
-            android:text="\n\n\tBackyard?"
+            android:text="\n\tBackyard?"
             android:textSize="10pt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-     <Spinner
-            android:id="@+id/backyard_spinner"
+     <RadioButton
+            android:id="@+id/backyard_yes"
             android:layout_width="fill_parent"
-            android:entries="@array/yesno"
+            android:text="Yes"
+         android:onClick="onRadioButtonClicked"
             android:layout_height="wrap_content">
-        </Spinner>
+        </RadioButton>
+     <RadioButton
+         android:id="@+id/backyard_no"
+         android:layout_width="fill_parent"
+         android:text="No"
+         android:onClick="onRadioButtonClicked"
+         android:layout_height="wrap_content">
+     </RadioButton>
+ </RadioGroup>
+ <RadioGroup
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
         <TextView
-            android:text="\n\n\tKids?"
+            android:text="\n\tKids?"
             android:textSize="10pt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <Spinner
-            android:id="@+id/kids_spinner"
+        <RadioButton
+            android:id="@+id/kids_yes"
             android:layout_width="fill_parent"
-            android:entries="@array/yesno"
+            android:text="Yes"
+            android:onClick="onRadioButtonClicked"
             android:layout_height="wrap_content">
-        </Spinner>
+        </RadioButton>
+     <RadioButton
+         android:id="@+id/kids_no"
+         android:layout_width="fill_parent"
+         android:text="No\n"
+         android:onClick="onRadioButtonClicked"
+         android:layout_height="wrap_content">
+     </RadioButton>
+</RadioGroup>
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"

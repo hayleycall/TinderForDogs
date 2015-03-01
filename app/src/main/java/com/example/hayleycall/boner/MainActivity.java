@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void goToPuppy1 (View view) {
+    public void goToNextDog (View view) {
         Intent intent = new Intent(this, puppy1.class);
         startActivity(intent);
     }

@@ -1,10 +1,12 @@
 package com.example.hayleycall.boner;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
 
 public class SixthActivity extends ActionBarActivity {
 
@@ -35,5 +37,9 @@ public class SixthActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void keepSearching(View view){
+        Intent intent = new Intent(this, puppy2.class);
+        startActivity(intent);
     }
 }

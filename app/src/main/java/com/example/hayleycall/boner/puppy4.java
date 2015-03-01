@@ -1,5 +1,10 @@
 package com.example.hayleycall.boner;
 
+/**
+ * Created by peyton on 3/1/15.
+ */
+
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
@@ -9,21 +14,21 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class puppy3 extends ActionBarActivity {
+public class puppy4 extends ActionBarActivity {
     public boolean otherPets=true;
     public boolean hasBackyard=false;
     public boolean hasKids=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.puppy3);
+        setContentView(R.layout.puppy4);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_third, menu);
+        getMenuInflater().inflate(R.menu.menu_fourth, menu);
         return true;
     }
 
@@ -43,14 +48,15 @@ public class puppy3 extends ActionBarActivity {
     }
 
     public void match(View view){
-        if(MyProperties.getInstance().otherPets==true && MyProperties.getInstance().hasBackyard==true
-                && MyProperties.getInstance().hasKids==false){
-            Intent intent = new Intent(this,Puppy3Match.class);
+        if(MyProperties.getInstance().otherPets==false  && MyProperties.getInstance().hasBackyard==false
+                && MyProperties.getInstance().hasKids==true){
+            Intent intent = new Intent(this,SeventhActivity.class);
             startActivity(intent);
         }else{
-            Intent intent = new Intent(this,puppy4.class);
+            Intent intent = new Intent(this,puppy5.class);
             startActivity(intent);
         }
 
     }
 }
+

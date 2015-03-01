@@ -37,8 +37,8 @@
             android:label="@string/title_activity_third" >
         </activity>
         <activity
-            android:name=".FourthActivity"
-            android:label="@string/title_activity_fourth" >
+            android:name=".Puppy3Match"
+            android:label="Puppy3Match" >
         </activity>
         <activity
             android:name=".FifthActivity"
@@ -47,6 +47,18 @@
         <activity
             android:name=".SixthActivity"
             android:label="@string/title_activity_sixth" >
+        </activity>
+        <activity
+            android:name=".SeventhActivity"
+            android:label="@string/title_activity_seventh" >
+        </activity>
+        <activity
+            android:name=".EighthActivity"
+            android:label="@string/title_activity_eighth" >
+        </activity>
+        <activity
+            android:name=".NinthActivity"
+            android:label="@string/title_activity_ninth" >
         </activity>
     </application>
 

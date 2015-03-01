@@ -40,7 +40,7 @@
         android:layout_alignParentBottom="true"
         android:background="@android:color/transparent"
         android:textColor="@android:color/holo_red_light"
-        android:onClick="goToPuppy1"/>
+        android:onClick="goToNextDog"/>
 
 
 

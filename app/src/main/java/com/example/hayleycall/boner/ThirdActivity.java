@@ -3,12 +3,14 @@ package com.example.hayleycall.boner;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.content.SharedPreferences;
 import android.widget.AdapterView;
@@ -19,26 +21,31 @@ public class ThirdActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+    }
+    public void onRadioButtonClicked(View view){
+        boolean checked = ((RadioButton)view).isChecked();
 
-        pets = (Spinner)findViewById(R.id.otherpet_spinner);
-        backyard=(Spinner)findViewById(R.id.backyard_spinner);
-        kids = (Spinner)findViewById(R.id.kids_spinner);
-        loadSavedPreferences();
-    }
-    public boolean onItemSelected(Spinner spinner){
-            if (spinner.getSelectedItem().toString().equals("Yes"))return true;
-            return false;
-    }
-    private void loadSavedPreferences() {
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-        otherPets= onItemSelected(pets);
-        hasBackyard= onItemSelected(backyard);
-        hasKids= onItemSelected(kids);
-        editor.putBoolean("pets",otherPets);
-        editor.putBoolean("backyard", hasBackyard);
-        editor.putBoolean("kids", hasKids);
-        editor.commit();
+        switch(view.getId()) {
+            case R.id.otherpet_yes:
+                if (checked)MyProperties.getInstance().otherPets = true;
+                break;
+            case R.id.otherpet_no:
+                if(checked)MyProperties.getInstance().otherPets=false;
+                break;
+            case R.id.kids_yes:
+                if (checked)MyProperties.getInstance().hasKids = true;
+                break;
+            case R.id.kids_no:
+                if(checked)MyProperties.getInstance().hasKids=false;
+                break;
+            case R.id.backyard_yes:
+                if (checked)MyProperties.getInstance().hasBackyard = true;
+                break;
+            case R.id.backyard_no:
+                if(checked)MyProperties.getInstance().hasBackyard=false;
+                break;
+            // Ninjas rule
+        }
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

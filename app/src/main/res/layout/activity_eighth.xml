@@ -4,11 +4,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.hayleycall.boner.FourthActivity">
+    tools:context="com.example.hayleycall.boner.EighthActivity">
 
     <ImageView
-        android:id="@+id/bria_match"
-        android:src="@drawable/dog2"
+        android:id="@+id/randi_match"
+        android:src="@mipmap/dog5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10pt"
-        android:text="\n\n\n\n\n\nCongratulations!\n You matched with Bria"/>
+        android:text="\n\n\n\n\n\nCongratulations!\n You matched with Randi"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,10 +38,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10pt"
-        android:text="http://www.austinpetsalive.org/adopt/available-dog-details/?ID=23598657"
+        android:text="=http://www.austinpetsalive.org/adopt/available-dog-details/?ID=25022068"
         android:autoLink="web"
         android:linksClickable="true"
         android:layout_alignParentBottom="true"/>
 
-</RelativeLayout>
 
+</RelativeLayout>

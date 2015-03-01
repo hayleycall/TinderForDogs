@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="My name is Morgan!"
+        android:text="My name is Charlie Brown!"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:id="@+id/textView2" />
@@ -22,14 +22,14 @@
         android:textColor="@android:color/black"
         android:id="@+id/textView1" />
 
- <ImageView
-     android:id="@+id/imageDog1"
-     android:layout_width="fill_parent"
-     android:layout_height="fill_parent"
-     android:layout_gravity="center"
-     android:src="@drawable/dog1"
+    <ImageView
+        android:id="@+id/imageDog1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/dog1"
 
-     />
+        />
 
     <RelativeLayout
         android:layout_width="fill_parent"

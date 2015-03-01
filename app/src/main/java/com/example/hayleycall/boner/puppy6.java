@@ -9,21 +9,21 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class puppy3 extends ActionBarActivity {
+public class puppy6 extends ActionBarActivity {
     public boolean otherPets=true;
     public boolean hasBackyard=false;
     public boolean hasKids=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.puppy3);
+        setContentView(R.layout.puppy6);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_third, menu);
+        getMenuInflater().inflate(R.menu.menu_sixth, menu);
         return true;
     }
 
@@ -44,13 +44,14 @@ public class puppy3 extends ActionBarActivity {
 
     public void match(View view){
         if(MyProperties.getInstance().otherPets==true && MyProperties.getInstance().hasBackyard==true
-                && MyProperties.getInstance().hasKids==false){
-            Intent intent = new Intent(this,Puppy3Match.class);
+                && MyProperties.getInstance().hasKids==true){
+            Intent intent = new Intent(this,NinthActivity.class);
             startActivity(intent);
         }else{
-            Intent intent = new Intent(this,puppy4.class);
+            Intent intent = new Intent(this,MainActivity.class);
             startActivity(intent);
         }
 
     }
 }
+
