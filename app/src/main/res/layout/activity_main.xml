@@ -8,7 +8,8 @@
     <TextView
         android:id="@+id/textView"
         android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
         android:id="@+id/pupbone_image"
@@ -18,19 +19,13 @@
         />
 
     <Button
-        android:text="Button1"
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="150px"
-        android:layout_marginBottom="150px"
-        android:onClick="clickMe"/>
-
-    <Button
-        android:text="Start Second Activity"
+        android:text="Find your best mate!"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
-        android:layout_height="150px"
-        android:layout_marginBottom="1px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:onClick="goToSecondActivity"/>
+
 
 </RelativeLayout>

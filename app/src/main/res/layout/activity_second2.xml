@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/secondTextView"
-        android:text="Hello World!" android:layout_width="wrap_content"
+        android:text="Boner: Tinder for pets and thier owners!" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 
