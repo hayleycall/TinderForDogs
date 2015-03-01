@@ -52,8 +52,8 @@ public class MainActivity extends ActionBarActivity {
         textView.setTextColor(Color.parseColor("#dfdfdf"));
     }
 
-    public void goToSecondActivity (View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+    public void goToMyAndroidAppActivity (View view) {
+        Intent intent = new Intent(this, MyAndroidAppActivity.class);
         startActivity(intent);
 
     }

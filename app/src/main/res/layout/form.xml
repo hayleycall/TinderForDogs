@@ -14,12 +14,51 @@
         android:text="@string/feedbacktitle"
         android:textSize="10pt">
      </TextView>
-     <EditText
-         android:id="@+id/EditTextName"
+     <TextView
+         android:text="Full Name"
          android:layout_width="wrap_content"
-         android:hint="@string/feedbackname"
-         android:inputType="textPersonName"
-         android:layout_height="fill_parent">
+         android:layout_height="wrap_content" />
+     <EditText
+        android:width="600px"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
       </EditText>
+      <TextView
+          android:text="Email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:width="600px"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+       </EditText>
+       <TextView
+           android:text="Address"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <EditText
+           android:width="600px"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+        </EditText>
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender_array"
+            android:prompt="@string/gender">
+         </Spinner>
+        <Spinner
+            android:id="@+id/activity_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/activity_level"
+            android:prompt="@string/activitylevel">
+        </Spinner>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
      </LinearLayout>
  </ScrollView>

@@ -8,8 +8,7 @@
     <TextView
         android:id="@+id/textView"
         android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"/>
+        android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/pupbone_image"
@@ -17,7 +16,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         />
-
     <Button
         android:text="Find your best mate!"
         android:id="@+id/button2"
@@ -25,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="goToSecondActivity"/>
-
+        android:onClick="goToMyAndroidAppActivity"/>
 
 </RelativeLayout>

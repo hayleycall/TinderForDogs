@@ -8,4 +8,17 @@
 
     <string name="feedbacktitle">Boner</string>
     <string name="feedbackname">Your name</string>
+    <string name="feedbackemail">Your email</string>
+    <string name="gender">Gender</string>
+    <string-array name="gender_array">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+    <string name='activitylevel'>Activity Level</string>
+    <string-array name="activity_level">
+        <item>Minimal</item>
+        <item>Average</item>
+        <item>High</item>
+    </string-array>
 </resources>
