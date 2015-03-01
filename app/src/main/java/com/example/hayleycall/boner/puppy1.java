@@ -8,12 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class puppy1 extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.puppy1);
     }
 
 
@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void goToNextDog(View view){
-        Intent intent = new Intent(this, MainActivity2Activity.class);
+        Intent intent = new Intent(this, puppy2.class);
         startActivity(intent);
     }
 
