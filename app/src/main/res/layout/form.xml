@@ -22,32 +22,50 @@
          android:layout_height="wrap_content" />
 
      <EditText
-        android:width="800px"
+         android:id="@+id/editText_name"
+         android:width="800px"
          android:layout_width="wrap_content"
-         android:layout_height="wrap_content">
+         android:layout_height="wrap_content"
+         android:inputType="textPersonName">
+
       </EditText>
       <TextView
-          android:text="\n\n\tEmail"
+          android:text="\n\tEmail"
           android:textSize="10pt"
           android:layout_width="wrap_content"
-          android:layout_height="wrap_content" />
+          android:layout_height="wrap_content"/>
       <EditText
+          android:id="@+id/editText_email"
           android:width="800px"
           android:layout_width="wrap_content"
-          android:layout_height="wrap_content">
+          android:layout_height="wrap_content"
+          android:inputType="textEmailAddress">
        </EditText>
        <TextView
-           android:text="\n\n\tAddress"
+           android:text="\n\tPassword"
+           android:textSize="10pt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editText_password"
+            android:width="800px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+       <TextView
+           android:text="\n\tAddress"
            android:textSize="10pt"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"/>
        <EditText
+           android:id="@+id/editText_address"
            android:width="800px"
            android:layout_width="wrap_content"
-           android:layout_height="wrap_content">
+           android:layout_height="wrap_content"
+           android:inputType="textPostalAddress">
         </EditText>
         <TextView
-            android:text="\n\n\tGender"
+            android:text="\n\tGender"
             android:textSize="10pt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

@@ -7,7 +7,7 @@ import android.widget.Toast;
 /**
  * Created by peyton on 3/1/15.
  */
-public class CustonOnItemSelectedListener implements OnItemSelectedListener {
+public class CustomOnItemSelectedListener implements OnItemSelectedListener {
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id){
         Toast.makeText(parent.getContext(),"OnItemSelectedListener: " + parent.getItemAtPosition(pos).toString(),
